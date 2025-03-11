@@ -1,0 +1,73 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000; /* Ensure the entire background is black */
+    color: #fff;
+    text-align: center;
+    min-height: 100vh; /* Ensure the body takes at least the full height of the viewport */
+}
+
+section {
+    background-color: #000; /* Ensure the section background is black */
+    padding: 100px 20px;
+    margin-top: 80px;
+    min-height: calc(100vh - 120px); /* Adjust section height to take the full viewport height, accounting for header */
+}
+
+header {
+    background-color: #000; /* Keep the header black */
+    padding: 20px 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-family: 'Mea Culpa', sans-serif;
+    font-size: 50px;
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover, .active {
+    color: #7F171F;
+    border-bottom: 2px solid #7F171F;
+}
+
+
+footer {
+    background-color: #000; /* Ensure the footer background is black */
+    color: #fff;
+    padding: 20px 0;
+    position: fixed;
+    text-align: center;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    font-size: 14px;
+    margin: 0;
+    padding-bottom: 20px; /* Adjust the padding to make space for the footer */
+}

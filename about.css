@@ -1,0 +1,43 @@
+.about-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px; /* Adds space between the image and text */
+    padding: 40px 10%; /* Reduced padding for closer header and content */
+    background-color: #000; /* Adjust based on your design */
+    color: white;
+    text-align: center; /* Centers the text in larger screens */
+    flex-wrap: wrap; /* Allows wrapping when content overflows on smaller screens */
+}
+
+.about-section img {
+    width: 60%; /* Adjust as needed */
+    max-width: 400px;
+    border-radius: 10px; /* Optional: Adds soft edges to the image */
+    margin: 0 auto; /* Center the image */
+}
+
+.about-text {
+    width: 30%; /* Ensures the text stays balanced */
+    font-size: 18px;
+    font-style: italic;
+    line-height: 1.6;
+    text-align: left;
+    margin: 0 auto; /* Ensures text is centered */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-section img {
+        width: 70%; /* Make image bigger on smaller screens */
+    }
+
+    .about-text {
+        width: 90%;
+    }
+}
